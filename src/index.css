@@ -14,24 +14,35 @@ code {
     monospace;
 }
 
-
 .main-layout {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
-
+.logo-content{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-style: italic;
+}
+.logo{
+  width: 100px;
+}
 nav {
   background-color: #363a45;
-  height: 100vh;
-  margin-right: 15px;
+  display: flex;
+  width:100%;
+  padding: 10px 0px;
   text-align: center;
-  width: 250px;
+  justify-content: space-between;
 }
+
 nav ul {
+  width: 30%;
   align-items: center;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
   padding-left: 0;
 }
 
@@ -47,6 +58,6 @@ nav li a {
 }
 
 .nav-active {
-  color: grey;
+  color: #61DBFB;
   transition: all .3s ease-out;
 }
